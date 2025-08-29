@@ -2,22 +2,16 @@ import { FaPython,FaHtml5, FaKaggle, FaDocker} from "react-icons/fa";
 import MatrixBackground from "../MatrixBackground";
 import {
   SiChartmogul,
-  SiFastapi,
-  SiGooglegemini,
-  SiHuggingface,
+  SiJupyter,
   SiKaggle,
-  SiLangchain,
-  SiReact,
+  SiPandas,
   SiScikitlearn,
-  SiTailwindcss,
-  SiTensorflow,
-  SiVite
 } from "react-icons/si";
 import { RevealOnScroll } from "../RevealOnScroll";
 import { CustomCursor } from "../CustomCursor";
 import { Footer } from "./Footer";
 import '../shadow.css'
-import { MdStackedLineChart, MdTableChart } from "react-icons/md";
+import { MdTableChart } from "react-icons/md";
 
 export const Project = () => {
   const project = {
@@ -29,9 +23,11 @@ export const Project = () => {
       "scikit-learn",
       "Kaggle",
       "mathplotlib",
+      "jupyter",
       "seaborn",
+      "pandas"
     ],
-    link: "https://github.com/amineelgardoum-rgb/Rag_amine_chatbot",
+    link: "https://github.com/amineelgardoum-rgb/Depression_Predict",
     video_link:"https://drive.google.com/file/d/1BKVdfv45SAt5KYmZ9y06OcjBwSc6EqX7/view?usp=drive_link",
     image: "/images/structure.png",
   };
@@ -42,6 +38,12 @@ export const Project = () => {
       color:"text-white",
       hoverColor:"hover:text-orange-600",
       glow:"hover:[filter:drop-shadow(0_0_5px_orange)_drop-shadow(0_0_10px_orange)_drop-shadow(0_0_15px_orange)]"
+    },
+    pandas:{
+      icon:<SiPandas/>,
+      color:"text-white",
+      hoverColor:"hover:text-blue-500",
+      glow:"hover:[filter:drop-shadow(0_0_5px_blue)_drop-shadow(0_0_10px_blue)_drop-shadow(0_0_15px_blue)]"
     },
     kaggle:{
       icon:<SiKaggle />,
@@ -60,6 +62,12 @@ export const Project = () => {
       color:'text-white',
       hoverColor:"hover:text-blue-500",
       glow:"hover:[filter:drop-shadow(0_0_5px_blue)_drop-shadow(0_0_10px_blue)_drop-shadow(0_0_15px_blue)]"
+    },
+    jupyter:{
+      icon:<SiJupyter />,
+      color:"text-white",
+      hoverColor:"hover:text-orange-600",
+      glow:"hover:[filter:drop-shadow(0_0_5px_orange)_drop-shadow(0_0_10px_orange)_drop-shadow(0_0_15px_orange)]"
     }
   };
 
